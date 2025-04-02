@@ -1,6 +1,10 @@
+import { Button } from "./ui/moving-border";
+import { Spotlight } from "./ui/Spotlight";
+
 export default function HeroSection() {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-between text-left py-15 px-0 md:px-6">
+        <section className="flex flex-col md:flex-row items-center justify-between text-left py-0 px-0 md:px-6">
+            <Spotlight />
             <div className="md:w-1/2 flex flex-col items-start">
                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-500 to-green-800 text-transparent bg-clip-text">
                     Transform Your Mind & Body
@@ -9,9 +13,14 @@ export default function HeroSection() {
                     Join Pritam, a yoga expert with 10+ years of experience, and embark on a journey of holistic well-being.
                     Achieve balance through personalized yoga, nutrition, and mindset practices.
                 </p>
-                <button className="mt-6 px-6 py-3 text-lg font-semibold text-white bg-green-600 rounded-lg shadow-lg hover:bg-green-700">
-                    Get Started
-                </button>
+                <div className="mt-5">
+                    <Button
+                        borderRadius="0.75rem"
+                        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    >
+                        Get Started
+                    </Button>
+                </div>
             </div>
             <div className="md:w-1/2 flex justify-center relative mt-6 md:mt-0">
                 <img
