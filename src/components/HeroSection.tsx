@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 
@@ -23,12 +24,12 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:w-1/2 flex justify-center relative mt-6 md:mt-0">
-                <img
+                <Image
                     src="/hero1.png"
                     alt="Yoga Practice"
                     className="w-full max-w-sm md:max-w-2xl"
                 />
-                <img
+                <Image
                     src="/overlay-image.png"
                     alt="Yoga Pose"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-lg md:w-4xl"
