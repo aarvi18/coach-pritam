@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 
@@ -10,10 +9,11 @@ export default function HeroSection() {
                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-500 to-green-800 text-transparent bg-clip-text">
                     Transform Your Mind & Body
                 </h1>
-                <p className="mt-4 text-lg text-gray-700 max-w-md">
+                <p className="mt-4 text-lg max-w-md" style={{ color: "var(--foreground)" }}>
                     Join Pritam, a yoga expert with 10+ years of experience, and embark on a journey of holistic well-being.
                     Achieve balance through personalized yoga, nutrition, and mindset practices.
                 </p>
+
                 <div className="mt-5">
                     <Button
                         borderRadius="0.75rem"
@@ -24,12 +24,12 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:w-1/2 flex justify-center relative mt-6 md:mt-0">
-                <Image
+                <img
                     src="/hero1.png"
                     alt="Yoga Practice"
                     className="w-full max-w-sm md:max-w-2xl"
                 />
-                <Image
+                <img
                     src="/overlay-image.png"
                     alt="Yoga Pose"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-lg md:w-4xl"
